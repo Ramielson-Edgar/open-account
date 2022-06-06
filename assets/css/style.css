@@ -415,7 +415,7 @@ img {
 
 .account-currency__selected::after {
   content: "";
-  background: url("/arrow-down.svg");
+  background: url("../../arrow-down.svg");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -496,7 +496,7 @@ img {
 }
 
 .account__error-notify {
-  background-image: url("/warning-svgrepo-com.svg");
+  background-image: url("../../warning-svgrepo-com.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
