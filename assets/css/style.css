@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 100vh;
+  line-height: 1.3;
+  color: #000;
+  background-color: #2f2f2f;
+  margin: 0;
+}
+
+header,
+p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-bottom: none;
+}
+
+.modal-content {
+  padding: 50px 0;
+  background: #F6F6F6;
+  -webkit-box-shadow: 0px 50px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 50px 40px rgba(0, 0, 0, 0.25);
+}
+
+.modal-description {
+  font-size: 18px;
+}
+
+.modal-footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: none;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  text-align: center;
+}
+
+.modal-footer p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  color: #a1a1a1;
+}
+
+.modal-body__confirm {
+  padding: 50px 0;
+}
+
+.modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-form {
+  width: 679px;
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 74px;
+  border: 1px solid #EBEFF7;
+  border-radius: 10px;
+  padding-left: 30px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  background-color: #EBEFF7;
+}
+
+.modal-input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #8496B9;
+  padding-left: 10px;
+}
+
+.modal-input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #8496B9;
+  padding-left: 10px;
+}
+
+.modal-input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #8496B9;
+  padding-left: 10px;
+}
+
+.modal-input::placeholder {
+  font-size: 15px;
+  color: #8496B9;
+  padding-left: 10px;
+}
+
+.modal-input:focus-visible {
+  border: 1px solid #55A9E7;
+  outline: #55A9E7;
+}
+
+.modal-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 18px 42px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1F5DDA;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.modal-button:focus, .modal-button:hover {
+  background-color: #7dc9ff;
+  color: #fff;
+}
+
+.modal-title {
+  font-weight: 900;
+  color: #494949;
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-header .close {
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  color: #1F5DDA;
+}
+
+.modal-header .close:hover {
+  outline: none;
+}
+
+.modal-header .close::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid #1F5DDA;
+  border-radius: 7px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.modal-header .close:hover::before {
+  border: 1px solid #1F5DDA;
+}
+
+.modal-dialog {
+  max-width: 976px;
+}
+
+.modal-button.disabled {
+  border: 2px solid #C7C7C7;
+  color: #505050;
+  font-weight: 600;
+  background-color: #C7C7C7;
+}
+
+.modal-select-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(261px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(261px, 1fr));
+  gap: 50px;
+}
+
+.modal-select-content {
+  padding: 50px;
+}
+
+.account-balance-input,
+.account-balance,
+.leverage,
+.trading-platform {
+  border: none;
+  border-bottom: 1px solid #82898D;
+  padding-bottom: 10px;
+  background: transparent;
+  outline: none;
+}
+
+.account-balance-input {
+  width: 261px;
+  padding: 0;
+  color: #1F5DDA;
+  text-transform: uppercase;
+}
+
+.account-balance-input::-webkit-input-placeholder {
+  text-transform: none;
+}
+
+.account-balance-input:-ms-input-placeholder {
+  text-transform: none;
+}
+
+.account-balance-input::-ms-input-placeholder {
+  text-transform: none;
+}
+
+.account-balance-input::placeholder {
+  text-transform: none;
+}
+
+.modal-footer-select {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-footer-select .modal-button {
+  position: unset;
+  top: unset;
+  left: unset;
+}
+
+.account-balance-input {
+  width: 100%;
+  border-bottom: none;
+}
+
+.account__error-notify,
+.account__success-notify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: #54FFADDB;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 1;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.modal__required-notify {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 200px;
+  font-size: 0.875rem;
+  margin-left: 16px;
+  background-color: #54FFADDB;
+  border-radius: 7px;
+  padding: 6px 18px;
+}
+
+.modal__required-notify::before {
+  display: inline-block;
+  text-align: center;
+  content: '';
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-image: url("/icon-info-black.svg");
+  background-repeat: no-repeat;
+  background-position: 44% 3px;
+  background-size: 35%;
+  background-color: #fff;
+}
+
+.account-currency__title {
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.account-currency__option {
+  color: #000;
+  font-weight: 900;
+}
+
+.account-currency__option {
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.account-currency__option:hover {
+  color: #1F5DDA;
+}
+
+.account-currency__select-box {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account-currency__options-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FBFBFB;
+  color: #f5f6fa;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 9px;
+  overflow: hidden;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  z-index: 2;
+}
+
+.account-currency__selected {
+  border-bottom: 1px solid #82898D;
+  position: relative;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.account-currency__selected::after {
+  content: "";
+  background: url("/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  right: 10px;
+  top: 16px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.account-currency__options-container.active {
+  max-height: 240px;
+  -webkit-box-shadow: 0px 26px 40px -20px rgba(45, 49, 55, 0.3);
+          box-shadow: 0px 26px 40px -20px rgba(45, 49, 55, 0.3);
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.account-currency__options-container.active + .selected::after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  top: 10px;
+}
+
+.account-currency__options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 8px 8px 0;
+}
+
+.account-currency__options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+.account-currency__option,
+.account-currency__selected {
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.account-currency__option {
+  padding: 12px 24px;
+}
+
+.account-currency__option:hover {
+  background: #EBEFF7;
+}
+
+.account-currency__label {
+  cursor: pointer;
+}
+
+.account-currency__radio {
+  display: none;
+}
+
+.modal-title {
+  font-size: 30px;
+  max-width: 430px;
+  line-height: 36.31px;
+}
+
+.modal-description {
+  font-size: 1rem;
+  max-width: 430px;
+}
+
+.error {
+  border-bottom: 1px solid #FF8A8A !important;
+}
+
+.account__error-notify-message {
+  position: relative;
+  top: 10px;
+  color: #FF8A8A;
+}
+
+.account__error-notify {
+  background-image: url("/warning-svgrepo-com.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: #FF8A8A;
+}
+
+@media (max-width: 576.98px) {
+  .modal-select-content {
+    padding: 50px 0;
+  }
+  .modal__required-notify {
+    margin: 0 auto;
+  }
+  .modal-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal-button {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  .modal-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
