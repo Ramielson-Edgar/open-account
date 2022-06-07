@@ -22,215 +22,261 @@
   </button>
 
   <!-- Modal -->
-
-  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h5 class="modal-title" id="exampleModalLabel">Confirm Your Phone Number</h5>
-          <p class="modal-description">Please confirm your phone number Via SMS for extra security purposes of your
-            account</p>
-        </div>
-
-        <div class="modal-body modal-body__confirm">
-          <form class="modal-form">
-            <input class="modal-input" type="text" placeholder="Enter The 6 Digit Code">
-            <button class="btn modal-button " type="button text-capitalize">
-              Send SMS
-              Code </button>
-
-            <!--После после нажатия рендерить эту кнопку с сообщением-->
-
-  <!-- <button class="btn modal-button disabled" disabled type="button text-capitalize">
-              Code Send
-            </button> -->
-  <!-- </form>
-
-  </div>
-
-  <div class="modal-footer">
-    <p class="modal-footer-description mb-2">If you don't receive the SMS code in 1 to 2 minutes Please click here
-      <a class="d-inline-block m-auto" href="#">&#40;Live Chat &#41;</a>
-    </p>
-    <p class="modal-footer-description">Provide the support team with the email you registered with and that
-      you
-      did not receive SMS</p>
-  </div>
-  </div>
-
-  </div>
-  </div>  -->
-
-
-  <!-- modal live trading account -->
+  <!-- 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content modal-select-content">
-        <div class="modal-header mb-5">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h5 class="modal-title mb-2" id="exampleModalLabel">
-            Open a Live Trading Account in couple of seconds!
-          </h5>
-          <p class="modal-description">
-            Please fill in all the information below
-          </p>
+
+
+      <div class="modal-content">
+        <div role="img" class="modal-img">
+          <a class="modal__logo mb-5" href="#">
+            <img class="img-fluid" src="/adro-fx-logo.svg" alt="company logo" width="252" height="91">
+            <span class="modal__logo-text d-block text-right text-white text-capitalize">the art oft
+              trading</span>
+          </a>
+
+
+          <div class="modal__note-wrapper">
+            <p class="modal__required-notify mb-3">information</p>
+            <p class="modal__note">
+              If you have any questions,you can ask
+              them in the live chat</p>
+          </div>
+
+          <p class="modal__logo-text text-white">More than just <strong>Broker</strong></p>
+
         </div>
 
-        <p class="modal__required-notify  mb-5">Alll field is Required</p>
+        <div class="modal__main-content container modal__main-content-confirm">
+          <div class="modal-header modal__confirm-header ">
+            <button type="button" class="close close__confirm" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
 
-        <div class="modal-body modal-select-items mb-2">
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <p class="account-currency__title">Trading Platform</p>
-              <span role="img" class="account__success-notify">
-                <svg width="10" height="5" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M11.9308 0.464844L6.92233 5.47334L1.91383 0.464844L0.26416 2.11451L6.92233 8.77268L13.5805 2.11451L11.9308 0.464844Z"
-                    fill="#fff" />
-                </svg>
-
-              </span>
-            </div>
-
-
-            <div class="account-currency__select-box">
-              <div class="account-currency__options-container">
-
-                <div class="account-currency__option">
-                  <input type="radio" class="account-currency__radio" id="allpips" name="category" />
-                  <label class="account-currency__label" for="allpips WebPlatform">Allpips WebPlatform</label>
-                </div>
-
-                <div class="account-currency__option">
-                  <input type="radio" class=" account-currency__radio" id="metatrader4" name="category" />
-                  <label class="account-currency__label" for="metatrader4">MetaTrader 4</label>
-                </div>
-
-              </div>
-
-              <div class="account-currency__selected">
-                Allpips Platfrom
-              </div>
-            </div>
+            <h5 class="modal-title modal-title__confirm" id="exampleModalLabel">Confirm Your Phone Number</h5>
+            <p class="modal-description">Please confirm your phone number Via SMS for extra security purposes of your
+              account</p>
           </div>
 
-          <div class="container">
+          <div class="modal-body modal-body__confirm">
+            <form class="modal-form">
+              <input class="modal-input" type="text" placeholder="Enter The 6 Digit Code">
+              <button class="btn modal-button modal-button_spinner modal-button__confirm" type="button text-capitalize">
+                Send SMS
+                Code </button>
 
-            <div class="d-flex justify-content-between">
-              <p class="account-currency__title">Account Currency</p>
-              <span role="img" class="account__success-notify">
-                <svg width="10" height="5" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M11.9308 0.464844L6.92233 5.47334L1.91383 0.464844L0.26416 2.11451L6.92233 8.77268L13.5805 2.11451L11.9308 0.464844Z"
-                    fill="#fff" />
-                </svg>
-
-              </span>
-            </div>
-
-            <div class="account-currency__select-box">
-              <div id="currency" class="account-currency__options-container">
-
-                <div class="account-currency__option">
-                  <input type="radio" class="account-currency__radio" id="USD" name="category" />
-                  <label class="account-currency__label" for="USD">USD</label>
-                </div>
-
-                <div class="account-currency__option">
-                  <input type="radio" class=" account-currency__radio" id="EUR" name="category" />
-                  <label class="account-currency__label" for="EUR">EUR</label>
-                </div>
-
-                <div class="account-currency__option">
-                  <input type="radio" class="account-currency__radio" id="GBP" name="category" />
-                  <label class="account-currency__label" for="GBP">GBP</label>
-                </div>
-
-                <div class="account-currency__option">
-                  <input type="radio" class="account-currency__radio" id="BTC" name="category" />
-                  <label class="account-currency__label" for="BTC">BTC</label>
-                </div>
-
-                <div class="account-currency__option">
-                  <input type="radio" class="account-currency__radio" id="ETH" name="category" />
-                  <label class="account-currency__label" for="ETH">ETH</label>
-                </div>
-              </div>
-
-              <div class="account-currency__selected">
-                Select Account Currency
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <p class="account-currency__title">Account balance</p>
-              <span role="img" class="account__success-notify">
-                <svg width="10" height="5" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M11.9308 0.464844L6.92233 5.47334L1.91383 0.464844L0.26416 2.11451L6.92233 8.77268L13.5805 2.11451L11.9308 0.464844Z"
-                    fill="#fff" />
-                </svg>
-
-              </span>
-            </div>
-
-            <form class="account-balance">
-              <input id="input" class="account-balance-input" type="text" placeholder="Enter the approximated deposit">
+               <button class="btn modal-button modal-button_state-disabled" disabled type="button text-capitalize">
+                Code Send
+              </button>
             </form>
 
           </div>
 
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <p class="account-currency__title">Leverage</p>
-              <span role="img" class="account__error-notify"></span>
-            </div>
+          <div class="modal-footer modal-footer__confirm">
+            <p class="modal-footer-description mb-2">If you don't receive the SMS code in 1 to 2
+              minutes Please click
+              here
+              <a class="d-inline-block" href="#">&#40;Live Chat &#41;</a>
+            </p>
+            <hr class="modal-footer__separator">
 
-
-            <div class="account-currency__select-box">
-              <div id="leverage" class="account-currency__options-container">
-
-                <div class="account-currency__option">
-
-                  <input type="radio" class="account-currency__radio" id="1:100" name="category" />
-                  <label class="account-currency__label" for="1:100">1:100</label>
-                </div>
-
-                <div class="account-currency__option">
-                  <input type="radio" class=" account-currency__radio" id="1:50" name="category" />
-                  <label class="account-currency__label" for="1:50">1:50</label>
-                </div>
-
-              </div>
-
-              <div class="account-currency__selected error">
-                Select account leverage
-              </div>
-
-
-            </div>
-
-            <span class="account__error-notify-message">
-              Are Required
-            </span>
+            <p class="modal-footer-description">Provide the support team with the email you registered with and that
+              you
+              did not receive SMS</p>
           </div>
+          </вшм>
         </div>
 
-        <div class="modal-footer modal-footer-select">
-          <button class="btn modal-button text-capitalize" type="button">Open Account</button>
+      </div>
+    </div> -->
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-select-content">
+
+        <div role="img" class="modal-img">
+          <a class="modal__logo mb-3" href="#">
+            <img class="img-fluid" src="/adro-fx-logo.svg" alt="company logo" width="252" height="91">
+            <span class="modal__logo-text d-block text-right text-white text-capitalize">the art oft
+              trading</span>
+          </a>
+
+
+          <div class="modal__note-wrapper">
+            <p class="modal__required-notify mb-3">information</p>
+            <p class="modal__note">
+              All fields are required, please fill them in,
+              if you have any questions,you can ask
+              them in the live chat</p>
+          </div>
+
+          <p class="modal__logo-text text-white">More than just <strong>Broker</strong></p>
+
+        </div>
+
+        <div class="modal__main-content">
+          <div class="modal-header mb-5">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="modal-title mb-2" id="exampleModalLabel">
+              Open a Live Trading Account in couple of seconds!
+            </h5>
+            <p class="modal-description">
+              Please fill in all the information below
+            </p>
+          </div>
+
+          <div class="modal-body modal-select-items mb-2">
+            <div class="container">
+              <div class="d-flex justify-content-between">
+                <p class="account-currency__title">Trading Platform</p>
+                <span role="img" class="account__success-notify">
+                  <svg width="10" height="5" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.9308 0.464844L6.92233 5.47334L1.91383 0.464844L0.26416 2.11451L6.92233 8.77268L13.5805 2.11451L11.9308 0.464844Z"
+                      fill="#fff" />
+                  </svg>
+
+                </span>
+              </div>
+
+
+              <div class="account-currency__select-box">
+                <div class="account-currency__options-container">
+
+                  <div class="account-currency__option">
+                    <input type="radio" class="account-currency__radio" id="allpips" name="category" />
+                    <label class="account-currency__label" for="allpips WebPlatform">Allpips WebPlatform</label>
+                  </div>
+
+                  <div class="account-currency__option">
+                    <input type="radio" class=" account-currency__radio" id="metatrader4" name="category" />
+                    <label class="account-currency__label" for="metatrader4">MetaTrader 4</label>
+                  </div>
+
+                </div>
+
+                <div class="account-currency__selected">
+                  Allpips Platfrom
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+
+              <div class="d-flex justify-content-between">
+                <p class="account-currency__title">Account Currency</p>
+                <span role="img" class="account__success-notify">
+                  <svg width="10" height="5" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.9308 0.464844L6.92233 5.47334L1.91383 0.464844L0.26416 2.11451L6.92233 8.77268L13.5805 2.11451L11.9308 0.464844Z"
+                      fill="#fff" />
+                  </svg>
+
+                </span>
+              </div>
+
+              <div class="account-currency__select-box">
+                <div id="currency" class="account-currency__options-container">
+
+                  <div class="account-currency__option">
+                    <input type="radio" class="account-currency__radio" id="USD" name="category" />
+                    <label class="account-currency__label" for="USD">USD</label>
+                  </div>
+
+                  <div class="account-currency__option">
+                    <input type="radio" class=" account-currency__radio" id="EUR" name="category" />
+                    <label class="account-currency__label" for="EUR">EUR</label>
+                  </div>
+
+                  <div class="account-currency__option">
+                    <input type="radio" class="account-currency__radio" id="GBP" name="category" />
+                    <label class="account-currency__label" for="GBP">GBP</label>
+                  </div>
+
+                  <div class="account-currency__option">
+                    <input type="radio" class="account-currency__radio" id="BTC" name="category" />
+                    <label class="account-currency__label" for="BTC">BTC</label>
+                  </div>
+
+                  <div class="account-currency__option">
+                    <input type="radio" class="account-currency__radio" id="ETH" name="category" />
+                    <label class="account-currency__label" for="ETH">ETH</label>
+                  </div>
+                </div>
+
+                <div class="account-currency__selected">
+                  Select Account Currency
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="d-flex justify-content-between">
+                <p class="account-currency__title">Account balance</p>
+                <span role="img" class="account__success-notify">
+                  <svg width="10" height="5" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.9308 0.464844L6.92233 5.47334L1.91383 0.464844L0.26416 2.11451L6.92233 8.77268L13.5805 2.11451L11.9308 0.464844Z"
+                      fill="#fff" />
+                  </svg>
+
+                </span>
+              </div>
+
+              <form class="account-balance">
+                <input id="input" class="account-balance-input" type="text"
+                  placeholder="Enter the approximated deposit">
+              </form>
+
+            </div>
+
+            <div class="container">
+              <div class="d-flex justify-content-between">
+                <p class="account-currency__title">Leverage</p>
+                <span role="img" class="account__error-notify"></span>
+              </div>
+
+
+              <div class="account-currency__select-box">
+                <div id="leverage" class="account-currency__options-container">
+
+                  <div class="account-currency__option">
+
+                    <input type="radio" class="account-currency__radio" id="1:100" name="category" />
+                    <label class="account-currency__label" for="1:100">1:100</label>
+                  </div>
+
+                  <div class="account-currency__option">
+                    <input type="radio" class=" account-currency__radio" id="1:50" name="category" />
+                    <label class="account-currency__label" for="1:50">1:50</label>
+                  </div>
+
+                </div>
+
+                <div class="account-currency__selected error">
+                  Select account leverage
+                </div>
+
+
+              </div>
+
+              <span class="account__error-notify-message">
+                Are Required
+              </span>
+            </div>
+          </div>
+
+          <div class="modal-footer modal-footer-select">
+            <button class="btn modal-button text-capitalize" type="button">Open Account</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
   <script src="main.js"></script>
 
 
