@@ -342,7 +342,7 @@ img {
     height: 30px;
     border-radius: 50%;
 
-    background-image: url('/icon-info-black.svg');
+    background-image: url('../../icon-info-black.svg');
     background-repeat: no-repeat;
     background-position: 44% 3px;
     background-size: 35%;
@@ -406,7 +406,7 @@ img {
 
 .account-currency__selected::after {
   content: "";
-  background: url("../arrow-down.svg");
+  background: url("../../arrow-down.svg");
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -489,7 +489,7 @@ img {
 }
 
 .account__error-notify {
-  background-image: url('/warning-svgrepo-com.svg');
+  background-image: url('../../warning-svgrepo-com.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -518,7 +518,7 @@ img {
   position: relative;
   width: 100%;
   height: auto;
-  background-image: url('/banner-img.png');
+  background-image: url('../../banner-img.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 150%;
